@@ -1,0 +1,105 @@
+/* Existing styles */
+
+.container {
+  max-width: 600px;
+  margin: 0 auto; /* Center the container */
+  text-align: center;
+}
+
+.maze-container {
+  display: inline-block; /* Allows the maze to be centered */
+}
+
+.maze-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.maze-row {
+  display: flex;
+}
+
+.maze-cell {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+
+.svg-inline--fa {
+  height: 1.5rem;
+  margin-top: 25%;
+}
+
+.player-cell {
+  background-color: #dc3545;
+  /* background-color: lightblue !important; */
+}
+
+.player-cell-exit {
+  background-color: #28a745;
+}
+
+/* .start-cell { */
+  /* background-color: rgb(207, 233, 207); */
+/* } */
+
+/* .exit-cell { */
+  /* background-color: green !important; */
+  /* background-color: lightcoral; */
+/* } */
+
+/* Controls styling */
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.control-row {
+  display: flex;
+  justify-content: center;
+}
+
+.left-btn {
+  margin-right: 40px; /* Adjust gap between Left and Right buttons */
+}
+
+.right-btn {
+  margin-left: 40px; /* Adjust gap between Left and Right buttons */
+}
+
+.arrow-button {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border: 2px solid #000;
+  background-color: #fff;
+  text-align: center;
+  line-height: 46px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+
+.arrow-button:active, .arrow-button:hover {
+  background-color: #ddd;
+}
+
+.arrow-button.up::before {
+  content: "↑";
+}
+
+.arrow-button.down::before {
+  content: "↓";
+}
+
+.arrow-button.left::before {
+  content: "←";
+}
+
+.arrow-button.right::before {
+  content: "→";
+}
